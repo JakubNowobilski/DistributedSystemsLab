@@ -1,0 +1,28 @@
+<div style="background: aliceblue" *ngIf="currentWeatherResponse !== undefined">
+  <div>
+    <h3>Results for location: {{currentWeatherResponse.providedLocation}}</h3>
+    <p>Server response: {{currentWeatherResponse.date}}</p>
+  </div>
+  <div>
+    <h4>Location details</h4>
+    <p>{{getLocationDescription()}}</p>
+  </div>
+  <div>
+    <h4>Weather details</h4>
+    <h4>{{currentWeatherResponse.currentWeather.conditionText}}</h4>
+    <img [src]="currentWeatherResponse.currentWeather.conditionIcon" alt="{{currentWeatherResponse.currentWeather.conditionText}}">
+    <p *ngIf="currentWeatherResponse.currentWeather.temperature">
+      Temperature: {{currentWeatherResponse.currentWeather.temperature}}&#176;C</p>
+    <p *ngIf="currentWeatherResponse.currentWeather.temperatureApparent">
+      Apparent Temperature: {{currentWeatherResponse.currentWeather.temperatureApparent}}&#176;C</p>
+    <p *ngIf="currentWeatherResponse.currentWeather.precipitationIntensity">
+      Precipitation: {{currentWeatherResponse.currentWeather.precipitationIntensity}}mm</p>
+    <p *ngIf="currentWeatherResponse.currentWeather.precipitationProbability">
+      Precipitation probability: {{currentWeatherResponse.currentWeather.precipitationProbability}}%</p>
+    <p *ngIf="currentWeatherResponse.currentWeather.cloudCover">
+      Cloud cover: {{currentWeatherResponse.currentWeather.cloudCover}}%</p>
+    <p *ngIf="currentWeatherResponse.currentWeather.humidity">
+      Humidity: {{currentWeatherResponse.currentWeather.humidity}}%</p>
+  </div>
+  <button (click)="onClearPage()">Clear page</button>
+</div>

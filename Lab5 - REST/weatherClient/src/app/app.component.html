@@ -1,0 +1,15 @@
+<div [formGroup]="currentWeatherForm">
+  <h2>Check current weather: </h2>
+  <label for="location">Location</label>
+  <input id="location" formControlName="location" type="text" placeholder="Enter location">
+  <button type="submit" (click)="navigateCurrentWeather()" [disabled]="!currentWeatherForm.valid">Get current weather</button>
+</div>
+<div [formGroup]="hourlyWeatherForm">
+  <h2>Check weather for given day: </h2>
+  <label for="location2">Location</label>
+  <input id="location2" formControlName="location2" type="text" placeholder="Enter location">
+  <label for="date2">Date</label>
+  <input id="date2" formControlName="date2" type="date" placeholder="Enter date">
+  <button type="submit" (click)="navigateHourlyWeather()" [disabled]="!hourlyWeatherForm.valid">Get hourly weather</button>
+</div>
+<router-outlet></router-outlet>

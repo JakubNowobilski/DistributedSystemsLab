@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "98a32448-5f31-495e-b564-d935327b1570",
+		"name": "MapQuest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://open.mapquestapi.com/geocoding/v1/address?key=&location=Kraków,AGH",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://open.mapquestapi.com/geocoding/v1/address?key=&location=Kraków,AGH",
+					"protocol": "http",
+					"host": [
+						"open",
+						"mapquestapi",
+						"com"
+					],
+					"path": [
+						"geocoding",
+						"v1",
+						"address"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": ""
+						},
+						{
+							"key": "location",
+							"value": "Kraków,AGH"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://open.mapquestapi.com/geocoding/v1/address?key=&location=50,19",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://open.mapquestapi.com/geocoding/v1/address?key=&location=50,19",
+					"protocol": "http",
+					"host": [
+						"open",
+						"mapquestapi",
+						"com"
+					],
+					"path": [
+						"geocoding",
+						"v1",
+						"address"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": ""
+						},
+						{
+							"key": "location",
+							"value": "50,19"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

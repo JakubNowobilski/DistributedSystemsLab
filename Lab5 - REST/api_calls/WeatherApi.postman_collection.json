@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "6ab09143-74a3-42aa-b3d7-d797f8939028",
+		"name": "WeatherApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://api.weatherapi.com/v1/current.json?key=&q=50,19",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api.weatherapi.com/v1/current.json?key=&q=50,19",
+					"protocol": "http",
+					"host": [
+						"api",
+						"weatherapi",
+						"com"
+					],
+					"path": [
+						"v1",
+						"current.json"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": ""
+						},
+						{
+							"key": "q",
+							"value": "50,19"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://api.weatherapi.com/v1/forecast.json?key=&q=50,19&dt=2021-05-27",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api.weatherapi.com/v1/forecast.json?key=&q=50,19&dt=2021-05-27",
+					"protocol": "http",
+					"host": [
+						"api",
+						"weatherapi",
+						"com"
+					],
+					"path": [
+						"v1",
+						"forecast.json"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": ""
+						},
+						{
+							"key": "q",
+							"value": "50,19"
+						},
+						{
+							"key": "dt",
+							"value": "2021-05-27"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://api.weatherapi.com/v1/history.json?key=&q=50,19&dt=2021-05-23",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api.weatherapi.com/v1/history.json?key=&q=50,19&dt=2021-05-23",
+					"protocol": "http",
+					"host": [
+						"api",
+						"weatherapi",
+						"com"
+					],
+					"path": [
+						"v1",
+						"history.json"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": ""
+						},
+						{
+							"key": "q",
+							"value": "50,19"
+						},
+						{
+							"key": "dt",
+							"value": "2021-05-23"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "04b549d8-0845-49db-afdd-3a5c52fa16bf",
+		"name": "ClimaCell",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://api.tomorrow.io/v4/timelines?location=50,19&fields=temperature,temperatureApparent,pressureSurfaceLevel,precipitationIntensity,precipitationProbability,precipitationType,cloudCover,windSpeed,windDirection,humidity&timesteps=current&units=metric&ap",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.tomorrow.io/v4/timelines?location=50,19&fields=temperature,temperatureApparent,pressureSurfaceLevel,precipitationIntensity,precipitationProbability,precipitationType,cloudCover,windSpeed,windDirection,humidity&timesteps=current&units=metric&apikey=",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tomorrow",
+						"io"
+					],
+					"path": [
+						"v4",
+						"timelines"
+					],
+					"query": [
+						{
+							"key": "location",
+							"value": "50,19"
+						},
+						{
+							"key": "fields",
+							"value": "temperature,temperatureApparent,pressureSurfaceLevel,precipitationIntensity,precipitationProbability,precipitationType,cloudCover,windSpeed,windDirection,humidity"
+						},
+						{
+							"key": "timesteps",
+							"value": "current"
+						},
+						{
+							"key": "units",
+							"value": "metric"
+						},
+						{
+							"key": "apikey",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.tomorrow.io/v4/timelines?location=50,19&fields=temperature,temperatureApparent&timesteps=current&units=metric&apikey=",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.tomorrow.io/v4/timelines?location=50,19&fields=temperature,temperatureApparent&timesteps=current&units=metric&apikey=",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tomorrow",
+						"io"
+					],
+					"path": [
+						"v4",
+						"timelines"
+					],
+					"query": [
+						{
+							"key": "location",
+							"value": "50,19"
+						},
+						{
+							"key": "fields",
+							"value": "temperature,temperatureApparent"
+						},
+						{
+							"key": "timesteps",
+							"value": "current"
+						},
+						{
+							"key": "units",
+							"value": "metric"
+						},
+						{
+							"key": "apikey",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

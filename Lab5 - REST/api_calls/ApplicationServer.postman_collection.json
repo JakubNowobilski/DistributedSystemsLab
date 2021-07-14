@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "342fe759-dd8d-4436-9ad6-cbae895e8285",
+		"name": "ApplicationServer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/current_weather?location=Kraków,AGH",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/current_weather?location=Kraków,AGH",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"current_weather"
+					],
+					"query": [
+						{
+							"key": "location",
+							"value": "Kraków,AGH"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/current_weather?location=50,19",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/current_weather?location=50,19",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"current_weather"
+					],
+					"query": [
+						{
+							"key": "location",
+							"value": "50,19"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/hourly_weather?location=Kraków,AGH&date=2021-05-27",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/hourly_weather?location=Kraków,AGH&date=2021-05-27",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hourly_weather"
+					],
+					"query": [
+						{
+							"key": "location",
+							"value": "Kraków,AGH"
+						},
+						{
+							"key": "date",
+							"value": "2021-05-27"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

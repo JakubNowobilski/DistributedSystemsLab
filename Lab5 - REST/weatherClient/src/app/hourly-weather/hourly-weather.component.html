@@ -1,0 +1,33 @@
+<div style="background: aliceblue" *ngIf="hourlyWeatherResponse !== undefined">
+  <div>
+    <h3>Results for location: {{hourlyWeatherResponse.providedLocation}} date: {{hourlyWeatherResponse.providedDate}}</h3>
+    <p>Server response: {{hourlyWeatherResponse.date}}</p>
+  </div>
+  <div>
+    <h4>Location details</h4>
+    <p>{{getLocationDescription()}}</p>
+  </div>
+  <div>
+    <h4>Weather details</h4>
+    <h4>{{hourlyWeatherResponse.hourlyWeather.conditionText}}</h4>
+    <img [src]="hourlyWeatherResponse.hourlyWeather.conditionIcon" alt="{{hourlyWeatherResponse.hourlyWeather.conditionText}}">
+    <p *ngIf="hourlyWeatherResponse.hourlyWeather.minTemperature">
+      Minimal temperature: {{hourlyWeatherResponse.hourlyWeather.minTemperature}}&#176;C</p>
+    <p *ngIf="hourlyWeatherResponse.hourlyWeather.maxTemperature">
+      Maximal temperature: {{hourlyWeatherResponse.hourlyWeather.maxTemperature}}&#176;C</p>
+    <p *ngIf="hourlyWeatherResponse.hourlyWeather.avgTemperature">
+      Average temperature: {{hourlyWeatherResponse.hourlyWeather.avgTemperature}}&#176;C</p>
+    <p *ngIf="hourlyWeatherResponse.hourlyWeather.sunrise">
+      Sunrise: {{hourlyWeatherResponse.hourlyWeather.sunrise}}</p>
+    <p *ngIf="hourlyWeatherResponse.hourlyWeather.sunset">
+      Sunset: {{hourlyWeatherResponse.hourlyWeather.sunset}}</p>
+    <div style="background: cornsilk" *ngFor="let hour of hourlyWeatherResponse.hourlyWeather.hours">
+      <h2>({{hour.time}})</h2>
+      <h4>{{hour.conditionText}}</h4>
+      <img [src]="hour.conditionIcon" alt="{{hour.conditionIcon}}">
+      <p>Temperature: {{hour.temperature}}</p>
+      <p>Precipitation: {{hour.precipitationIntensity}}mm</p>
+    </div>
+  </div>
+  <button (click)="onClearPage()">Clear page</button>
+</div>

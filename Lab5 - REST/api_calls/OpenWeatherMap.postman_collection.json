@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "dc833ba7-7990-48fd-adc7-936a43957b08",
+		"name": "OpenWeatherMap",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://api.openweathermap.org/data/2.5/weather?lat=50&lon=19&appid=&units=metric",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api.openweathermap.org/data/2.5/weather?lat=50&lon=19&appid=&units=metric",
+					"protocol": "http",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "50"
+						},
+						{
+							"key": "lon",
+							"value": "19"
+						},
+						{
+							"key": "appid",
+							"value": ""
+						},
+						{
+							"key": "units",
+							"value": "metric"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
